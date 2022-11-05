@@ -10,21 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using SportRadar.Client.ViewModels;
 
-namespace SportRadar.Client
+namespace SportRadar.Client.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for AddGameView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class AddGameView : Window
     {
-        public MainWindow()
+        public AddGameView()
         {
             InitializeComponent();
-            DataContext = new MainViewViewModel();
         }
     }
 }

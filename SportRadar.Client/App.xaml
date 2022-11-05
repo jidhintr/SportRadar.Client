@@ -2,8 +2,17 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:SportRadar.Client"
+             xmlns:views="clr-namespace:SportRadar.Client.Views"
+             xmlns:vm="clr-namespace:SportRadar.Client.ViewModels" 
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <!--<helper:VmLocator x:Key="Locator" />-->
+        <DataTemplate DataType="{x:Type vm:AddGameViewModel}">
+            <views:AddGameView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:LiveScoreViewModel}">
+            <views:LiveScoreView/>
+        </DataTemplate>
+
     </Application.Resources>
 </Application>

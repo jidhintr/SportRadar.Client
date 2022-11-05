@@ -4,9 +4,17 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SportRadar.Client"
+        xmlns:vm="clr-namespace:SportRadar.Client.ViewModels"
+        
         mc:Ignorable="d"
         Title="Live Score" Height="450" Width="800">
-    <Grid>
+    
+    <Grid >
 
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Vertical" >
+            <ContentControl Content="{Binding SelectedViewModel}"/>
+            <Button HorizontalAlignment="Center" VerticalAlignment="Bottom">Add Game</Button>
+        </StackPanel>
+        
     </Grid>
 </Window>
